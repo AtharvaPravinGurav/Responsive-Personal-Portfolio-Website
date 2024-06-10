@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Portfolio Website | Atharva_Pravin_Gurav</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Portfolio.</a></div>
+      <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">My project's</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#Chat with us">Chat with us</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+      </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/AtharvaPravinGurav"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+<!-- Home Section Start -->
+ <section class="home" id="home">
+   <div class="home-content">
+     <div class="text">
+       <div class="text-one">Hello,</div>
+       <div class="text-two">I'm Atharva Pravin Gurav</div>
+       <div class="text-three">UI-UX Designer & Web Developer</div>
+       <div class="text-four">From Baramati</div>
+     </div>
+     <div class="button">
+       <button>Hire Me</button>
+     </div>
+   </div>
+ </section>
+
+<!-- About Section Start -->
+<section class="about" id="about">
+  <div class="content">
+    <div class="title"><span>About Me</span></div>
+    <div class="about-details">
+      <div class="left">
+        <img id="imagePlaceholder" src="images/about.png" alt="">
+      </div>
+      <div class="right">
+        <div class="topic">Designing and Development Of Website & Mobile Application Is My Passion</div>
+        <p>EDUCATION<br><br>
+          B.E Information Technology<br>
+          VPKBIET, Baramati, July 2023, CGPA: 7.27<br><br>
+          Senior Secondary (XII), Science:<br>
+          KSK college, Bhigwan, Pune.<br>(2018-19), Percentage: 62.31%<br><br>
+          Secondary (X), Science:<br>
+          Vidya Pratishthan’s English Medium School(CBSE), Baramati.<br>(2016-17), Percentage: 65.67%
+        </p>
+        <section class="resume">
+          <h2>Download My Resume</h2>
+          <p>You can download my resume by clicking the button below:</p>
+          <a href="Atharva_Gurav_Resume2.pdf" download class="download-button">Download Resume</a>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const imagePaths = [
+    "images/about.png",
+    "images/about2.png", // Add more image paths as needed
+    "images/about3.png"
+    // Add more image paths as needed
+  ];
+
+  const imageElement = document.getElementById("imagePlaceholder");
+  let currentImageIndex = 0;
+
+  function changeImage() {
+    imageElement.src = imagePaths[currentImageIndex];
+    currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
+  }
+
+  setInterval(changeImage, 2000); // Change image every 2 seconds
+</script>
+
+
+<!-- My Skill Section Start -->
+<!-- Section Tag and Other Div will same where we need to put same CSS -->
+<section class="skills" id="skills">
+ <div class="content">
+   <div class="title"><span>My Skills</span></div>
+   <div class="skills-details">
+     <div class="text">
+       <div class="topic">Skills Reflects Our Knowledge</div>
+       <p>Experienced UI/UX designer and software developer with a passion for exceptional user experiences.<br>Proficient in intuitive interface design, user-centered principles, and industry-leading tools.<br>Successfully delivered innovative solutions, bridging design and functionality for seamless integration. Proactive problem-solver, effective communicator, and committed to staying current with design trends and technologies.<br>Ready to create compelling, user-centric software applications.</p>
+       <div class="experience">
+         <div class="num">3+</div>
+         <div class="exp">Years Of <br> Experience</div>
+       </div>
+     </div>
+     <div class="boxes">
+       <div class="box">
+         <div class="topic">Core-Java, Python, Machine Learning</div>
+         </div>
+         <div class="topic">UI-UX Designer:<br>(User Journey, User Testing, User Testing, Prototyping, Wireframing, User Persona, Responsive Design)
+        </div>
+        <div class="topic">Web Design & development:<br>(HTML,CSS,JS & BOOTSTRAP)
+        </div>
+     </div>
+   </div>
+ </div>
+</section>
+
+<!-- My Services Section Start -->
+ <section class="services" id="services">
+   <div class="content">
+     <div class="title"><span>My Services</span></div>
+     <div class="boxes">
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-desktop"></i>
+       </div>
+       <div class="topic">Web Devlopment</div>
+       <p>Discover the power of a captivating online presence through our web development services.<br>We specialize in crafting websites that merge cutting-edge design with seamless functionality.<br>From responsive layouts to dynamic interactions, we create user-centric platforms that engage and convert.<br>Our team's proficiency in web development technologies ensures your website is not just visually appealing but also performs flawlessly across devices.<br>Let's collaborate to bring your brand to life on the digital stage and make your online goals a reality.</p>
+     </div>
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-paint-brush"></i>
+       </div>
+       <div class="topic">Graphic Design</div>
+       <p>Unleash the visual potential of your brand through our graphic design services.<br>We transform ideas into stunning visuals that captivate, resonate, and leave a lasting impression.<br>From captivating logos to eye-catching marketing materials, our designs are a fusion of creativity and strategy.<br>With meticulous attention to detail and a keen understanding of aesthetics, we craft designs that communicate your brand's essence effectively.<br>Let's collaborate to amplify your brand's visual identity and stand out in a visually saturated world.</p>
+     </div>
+       <div class="box">
+         <div class="icon">
+           <i class="fas fa-chart-line"></i>
+       </div>
+       <div class="topic">UI-UX Designer</div>
+       <p>Elevate user satisfaction and engagement with our UI-UX design services.<br>We specialize in creating intuitive, visually pleasing interfaces that resonate with your audience.<br>From seamless navigation to captivating visuals, our designs prioritize user needs and behaviors.<br>With a keen eye for aesthetics and a deep understanding of user psychology, we transform concepts into user-friendly digital realities.<br>Let's collaborate to ensure your digital platforms are not just functional, but delightful experiences that leave a lasting impact.</p>
+     </div>
+       <div class="box">
+         <div class="icon">
+           <i class="fab fa-android"></i>
+       </div>
+       <div class="topic"> Android APP Development</div>
+       <p>Elevate your business with our Android app development services.<br>Crafting innovative solutions that seamlessly merge functionality with aesthetics, we transform your ideas into engaging digital realities.<br>Our team's expertise in Android app development ensures a user-centric experience that resonates with your audience.<br>From concept to implementation, we're dedicated to bringing your vision to life on the Android platform.<br>Let's collaborate and create an app that captivates users and drives success.
+
+
+
+
+
+       </p>
+     </div>
+   </div>
+   </div>
+ </section>
+
+
+<!-- My Works section Start -->
+<section class="my work" id="work">
+  <div class="content">
+    <div class="title"><span>My Project's</span></div>
+    <p>Check out My journey through dynamic UI-UX projects that redefine user experiences.<br>From the captivating melodies of Rhythm Music App to the cinematic enchantment of CineEase Movie Booking App, our designs prioritize intuitive interactions.<br>Explore interior design with FurniConnect, embrace innovation with Future Pedigree, and travel effortlessly with TravelTrekker.<br>Unveil the cryptocurrency landscape with CryptoVue Dashboard and effortlessly discover your dream property using HomeHaven.<br><br>
+      Our expertise goes beyond design we specialize in front-end development using HTML, CSS, JavaScript, and Bootstrap.<br>We bring your concepts to life, ensuring seamless functionality and visual harmony.<br>Our dedication to merging aesthetics with functionality is reflected in each pixel-perfect detail of our projects.<br>With our UI-UX mastery and front-end prowess, we're poised to enhance your digital presence and captivate your audience.<br>Let's transform ideas into captivating realities together.</p>
+    <div class="text">
+      <div class="topic">Check Out My Project's :></div>
+      <p>UI-UX, Web Development & App Development</p>
+      <a class="about-button" href="Portfolio.HTML" target="_blank">View project's</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Contact Me section Start -->
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Contact Me</span></div>
+    <p>Phone Number- 7745058193<br>Email Address- atharva.gurav1224@gmail.com</p>
+    <div class="text">
+      <div class="topic">Have Any Project?</div>
+      <p>Seeking a challenging position in a reputed orgainzation where i can learn
+        new skills, expand my knowledge, and leverage my learning.</p>
+      <a class="whatsapp-button" href="https://wa.me/7745058193" target="_blank">Chat with me on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- Chatbot section Start -->
+<section class="contact" id="Chat with us">
+  <div class="content">
+    <div class="title"><span>ask your query</span></div>
+    <div class="text">
+      <div class="topic">Know More</div>
+      <p>Feel free to use our chatbot for quick and informative answers to any questions you may have!</p>
+      <a class="whatsapp-button" href="ch.HTML" target="_blank">ask your query to Chatbot</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section Start -->
+<footer>
+  <div class="text">
+    <span>Created By <a href="#">Atharva Pravin Gurav</a> | &#169; 2023 All Rights Reserved</span>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
